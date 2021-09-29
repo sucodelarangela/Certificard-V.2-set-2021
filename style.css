@@ -1,0 +1,170 @@
+/* propriedade visual: valor */
+
+body {
+  background: #12132E;
+  font-family: 'Architects Daughter', cursive;
+}
+
+section {
+  animation: glow1 1s ease-in-out infinite alternate;
+  box-shadow: 5px 5px 50px 10px #ff6100;
+  align-self: flex;
+  margin: 5vw;
+  max-width: 1260px;
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+  
+@-webkit-keyframes glow1 {
+  from {
+    box-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 20px #ff6100, 0 0 30px #ff6100, 0 0 40px #ff6100, 0 0 50px #ff6100, 0 0 60px #ff6100;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff6100, 0 0 40px #ff6100, 0 0 50px #ff6100, 0 0 60px #ff6100, 0 0 70px #ff6100, 0 0 80px #ff6100;
+  }
+}
+
+section h1 {
+  font-size: 25px;
+}
+
+header {
+  background-image: url("https://64.media.tumblr.com/9bbca134b9b71c8b7e73c4dcb5f48684/ac162f4241d907cf-41/s2048x3072/70932332f440ad0c18ff299178ab1e0c5d4f4c7f.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 160px;
+  border-radius: 5px;
+}
+
+.tema button {
+  float: right;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 6px 6px;
+  background: #9eded3;
+  border-radius: 5px;
+}
+
+.projetos {
+  padding: 15px;
+  border: 1px solid black;
+  background-color: #9eded3;
+  border-radius: 5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 100%;
+  width: 160px;
+  height: 160px;
+  margin-left: 30px;
+  margin-right: auto;
+  display: block;
+  transform: translateY(-5%);
+  border: 10px solid white;
+}
+
+.itens {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.itens .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  margin-left: 15px;
+}
+
+.itens:hover .tooltiptext {
+  visibility: visible;
+}
+
+.box {
+  display: table-cell;
+  width: 100vw;
+  table-layout: auto;
+  background-color: transparent;
+  border: none;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.box img {
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 6px;
+  width: auto;
+  height: 30px;
+  border: none;
+  border-radius: 0;
+}
+
+.vj img {
+  height: 40px;
+  padding-bottom: 0;
+}
+
+.dark section {
+  animation: glow2 1s ease-in-out infinite alternate;
+  background-color: #000000;
+}
+
+@-webkit-keyframes glow2 {
+  from {
+    box-shadow: 0 0 0px #000000, 0 0 10px #000000, 0 0 20px #ff6100, 0 0 30px #ff6100, 0 0 40px #ff6100, 0 0 50px #ff6100, 0 0 60px #ff6100;
+  }
+  to {
+    box-shadow: 0 0 20px #000000, 0 0 30px #ff6100, 0 0 40px #ff6100, 0 0 50px #ff6100, 0 0 60px #ff6100, 0 0 70px #ff6100, 0 0 80px #ff6100;
+  }
+}
+
+.dark h1 {
+  color: #ff6100;
+}
+
+.dark h2 {
+  color: #ff6100;
+}
+
+.dark h3 {
+  color: #9eded3;
+  font-weight: lighter;
+}
+
+.dark .projetos {
+  background-color: #333333;
+  border: 1px solid #fff;
+}
+
+.dark .itens p {
+  color: #fff;
+  font-weight: normal;
+}
+
+.dark button {
+  background: #333333;
+  color: #ff6100;
+  font-weight: normal;
+}
+
+.dark .github img {
+  content:url("https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg");
+  height: 35px;
+}
